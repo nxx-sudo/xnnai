@@ -40,12 +40,12 @@ window.translations.es = {
     ctaSecondary: "Ver qué sabe hacer",
     demoLabel: "Ejemplo de respuesta",
     demoChannel: "#historia-y-ciencia",
-    demoAskLabel: "Pregunta —",
+    demoAskLabel: "Pregunta -",
     demoQuestion: "¿Por qué fue tan importante la Biblioteca de Alejandría para la ciencia?",
     demoAnswer: "Reunió el mayor archivo de conocimiento del mundo antiguo¹, sentando las bases de la catalogación bibliográfica y el método comparativo entre fuentes². Su legado sigue presente en cómo organizamos el saber hoy.",
     demoSourcesLabel: "Fuentes",
-    demoSource1: "¹ Encyclopaedia Britannica — Library of Alexandria",
-    demoSource2: "² UNESCO Memory of the World — Ancient Libraries"
+    demoSource1: "¹ Encyclopaedia Britannica - Library of Alexandria",
+    demoSource2: "² UNESCO Memory of the World - Ancient Libraries"
   },
 
   features: {
@@ -116,7 +116,7 @@ window.translations.es = {
 
   privacy: {
     title: "Política de Privacidad",
-    updated: "Última actualización: [completa esta fecha]",
+    updated: "Última actualización: 07/08/26",
     intro: "Esta política explica qué datos recopila Xnn AI, tanto en Discord como en este sitio web, y cómo los usamos. Sustituye los textos entre corchetes por la información real de tu proyecto antes de publicar esta página.",
     s1: {
       title: "Qué datos recopilamos",
@@ -136,7 +136,7 @@ window.translations.es = {
     },
     s5: {
       title: "Tus derechos",
-      body: "Puedes solicitar acceso, corrección o eliminación de tus datos escribiendo a [correo de contacto]. Si resides en el Espacio Económico Europeo u otra región con protección de datos equivalente, estos derechos aplican conforme a su normativa local."
+      body: "Puedes solicitar acceso, corrección o eliminación de tus datos escribiendo a xnnaiof@protonmail.com. Si resides en el Espacio Económico Europeo u otra región con protección de datos equivalente, estos derechos aplican conforme a su normativa local."
     },
     s6: {
       title: "Seguridad",
@@ -152,13 +152,13 @@ window.translations.es = {
     },
     s9: {
       title: "Contacto",
-      body: "Para cualquier consulta sobre privacidad, escríbenos a [correo de contacto] o a través de [tu servidor de soporte en Discord]."
+      body: "Para cualquier consulta sobre privacidad, escríbenos a xnnaiof@protonmail.com o a través de [Servidor no nisponible]."
     }
   },
 
   terms: {
     title: "Términos y Condiciones",
-    updated: "Última actualización: [completa esta fecha]",
+    updated: "Última actualización: 07/08/26",
     intro: "Al añadir o usar Xnn AI aceptas estos términos. Sustituye los textos entre corchetes por la información real de tu proyecto antes de publicar esta página.",
     s1: {
       title: "Aceptación de los términos",
@@ -198,7 +198,7 @@ window.translations.es = {
     },
     s10: {
       title: "Contacto",
-      body: "Para cualquier duda sobre estos términos, escríbenos a [correo de contacto] o a través de [tu servidor de soporte en Discord]."
+      body: "Para cualquier duda sobre estos términos, escríbenos a xnnaiof@protonmail.com o a través de [Servidor no disponible]."
     }
   }
 };
