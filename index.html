@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Aplica el tema guardado (o el del sistema) antes de pintar, para evitar parpadeos -->
+<script>
+(function () {
+  var mode = localStorage.getItem("theme-mode") || "auto";
+  var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = mode === "auto" ? (dark ? "dark" : "light") : mode;
+  document.documentElement.setAttribute("data-theme", theme);
+  document.documentElement.setAttribute("data-theme-mode", mode);
+})();
+</script>
+<title data-i18n="meta.titleHome">Xnn AI — Bot de Discord para investigación, ciencia, historia y programación</title>
+<meta name="description" content="Xnn AI es un bot de Discord con inteligencia artificial para investigar con fuentes científicas, explorar historia y aprender programación.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html#top">
+      <span class="logo-mark" aria-hidden="true">X</span>
+      Xnn AI
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html#top" data-i18n="nav.home">Inicio</a>
+      <a href="index.html#funciones" data-i18n="nav.features">Funciones</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Privacidad</a>
+      <a href="terms.html" data-i18n="nav.terms">Términos</a>
+    </nav>
+
+    <div class="header-controls">
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button type="button" class="lang-trigger" id="lang-trigger" data-i18n-aria-label="lang.selectLabel" aria-label="Idioma" aria-haspopup="listbox" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.3 2.3 3.5 5.3 3.5 8.5s-1.2 6.2-3.5 8.5c-2.3-2.3-3.5-5.3-3.5-8.5S9.7 5.8 12 3.5Z"/></svg>
+          <span class="lang-code" id="lang-current-code">ES</span>
+          <span class="lang-chevron" aria-hidden="true"></span>
+        </button>
+        <div class="lang-panel" id="lang-panel" role="listbox" aria-label="Idioma"></div>
+      </div>
+      <button class="icon-btn" id="theme-toggle" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="1.4"/><path d="M8 20h8M12 16.5V20"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow" data-i18n="hero.eyebrow">Bot de Discord · IA de investigación</span>
+        <h1 data-i18n="hero.title">El copiloto de conocimiento para tu servidor de Discord</h1>
+        <p class="lede" data-i18n="hero.subtitle">Xnn responde con fuentes científicas verificables, explica historia con contexto y te ayuda a programar sin salir del chat.</p>
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary js-invite-trigger" data-i18n="hero.ctaPrimary">Añadir a Discord</button>
+          <a class="btn btn-ghost" href="#funciones" data-i18n="hero.ctaSecondary">Ver qué sabe hacer</a>
+        </div>
+      </div>
+
+      <div class="demo-card reveal">
+        <div class="demo-label">
+          <span data-i18n="hero.demoLabel">Ejemplo de respuesta</span>
+          <span data-i18n="hero.demoChannel">#historia-y-ciencia</span>
+        </div>
+        <p class="demo-q">
+          <strong data-i18n="hero.demoAskLabel">Pregunta —</strong>
+          <span data-i18n="hero.demoQuestion">¿Por qué fue tan importante la Biblioteca de Alejandría para la ciencia?</span>
+        </p>
+        <p class="demo-a" data-i18n="hero.demoAnswer">Reunió el mayor archivo de conocimiento del mundo antiguo¹, sentando las bases de la catalogación bibliográfica y el método comparativo entre fuentes². Su legado sigue presente en cómo organizamos el saber hoy.</p>
+        <div class="demo-sources">
+          <span class="tag" data-i18n="hero.demoSourcesLabel">Fuentes</span>
+          <div data-i18n="hero.demoSource1">¹ Encyclopaedia Britannica — Library of Alexandria</div>
+          <div data-i18n="hero.demoSource2">² UNESCO Memory of the World — Ancient Libraries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="funciones">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="features.eyebrow">Qué hace</span>
+        <h2 data-i18n="features.title">Cuatro formas de explorar el conocimiento</h2>
+        <p class="lede" data-i18n="features.lede">Cada respuesta está pensada para enseñar, no solo para contestar.</p>
+      </div>
+
+      <div class="features-grid reveal">
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6M10 3v6.2L5.5 17a2 2 0 0 0 1.7 3h9.6a2 2 0 0 0 1.7-3L14 9.2V3"/></svg>
+          </div>
+          <h3 data-i18n="features.research.title">Investigación con fuentes</h3>
+          <p data-i18n="features.research.body">Cada respuesta viene acompañada de las fuentes científicas que la respaldan.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21h16M5 21V10M19 21V10M3 10l9-6 9 6M8 10v7M12 10v7M16 10v7"/></svg>
+          </div>
+          <h3 data-i18n="features.history.title">Historia con contexto</h3>
+          <p data-i18n="features.history.body">Explica eventos y procesos históricos conectando causas y consecuencias.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8.5 8 4.5 12l4 4M15.5 8l4 4-4 4M13.5 6.5l-3 11"/></svg>
+          </div>
+          <h3 data-i18n="features.programming.title">Programación al detalle</h3>
+          <p data-i18n="features.programming.body">Depura errores y propone ejemplos de código en múltiples lenguajes.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+          </div>
+          <h3 data-i18n="features.fast.title">Directo en tus canales</h3>
+          <p data-i18n="features.fast.body">Comandos simples que responden justo donde ya conversa tu comunidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="steps.eyebrow">Cómo empezar</span>
+        <h2 data-i18n="steps.title">De la invitación a la primera respuesta citada</h2>
+      </div>
+
+      <div class="steps reveal">
+        <div class="step">
+          <div class="step-index">01</div>
+          <h3 data-i18n="steps.step1.title">Invita a Xnn</h3>
+          <p data-i18n="steps.step1.body">Añádela a tu servidor con un clic y concede los permisos básicos en los canales que elijas.</p>
+        </div>
+        <div class="step">
+          <div class="step-index">02</div>
+          <h3 data-i18n="steps.step2.title">Escribe tu pregunta</h3>
+          <p data-i18n="steps.step2.body">Usa el comando de chat o menciónala directamente: entiende el contexto.</p>
+        </div>
+        <div class="step">
+          <div class="step-index">03</div>
+          <h3 data-i18n="steps.step3.title">Recibe una respuesta con fuentes</h3>
+          <p data-i18n="steps.step3.body">Obtén una explicación clara y, cuando aplica, las referencias que la sustentan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2 data-i18n="cta.title">Lleva la investigación a tu comunidad</h2>
+          <p data-i18n="cta.body">Xnn es gratuita para empezar y tarda menos de un minuto en configurarse.</p>
+        </div>
+        <button type="button" class="btn btn-primary js-invite-trigger" data-i18n="nav.invite">Añadir a Discord</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html#top">
+          <span class="logo-mark" aria-hidden="true">X</span>
+          Xnn AI
+        </a>
+        <p data-i18n="footer.tagline">Un bot de Discord con IA para investigar, aprender historia y programar mejor.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4 data-i18n="footer.linksHeading">Explorar</h4>
+          <a href="index.html#top" data-i18n="nav.home">Inicio</a>
+          <a href="index.html#funciones" data-i18n="nav.features">Funciones</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legalHeading">Legal</h4>
+          <a href="privacy.html" data-i18n="nav.privacy">Privacidad</a>
+          <a href="terms.html" data-i18n="nav.terms">Términos</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year"></span> Xnn AI. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="invite-modal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="invite-modal-title">
+    <button class="modal-close" id="invite-modal-close" type="button" data-i18n-aria-label="invite.close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+    <span class="eyebrow" data-i18n="invite.eyebrow">Añadir a Discord</span>
+    <h2 id="invite-modal-title" data-i18n="invite.title">¿Dónde querés instalar el bot?</h2>
+    <p data-i18n="invite.body">Elegí si querés añadirlo a un servidor completo o instalarlo solo para tu cuenta.</p>
+
+    <div class="modal-options">
+      <a class="modal-option" href="#" id="invite-server-link">
+        <span class="modal-option-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="4" width="17" height="7" rx="1.6"/><rect x="3.5" y="13" width="17" height="7" rx="1.6"/><circle cx="7.2" cy="7.5" r="0.9" fill="currentColor" stroke="none"/><circle cx="7.2" cy="16.5" r="0.9" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="modal-option-text">
+          <strong data-i18n="invite.serverTitle">Servidor</strong>
+          <span data-i18n="invite.serverBody">Disponible para todos los miembros del servidor que elijas.</span>
+        </span>
+      </a>
+      <a class="modal-option" href="#" id="invite-user-link">
+        <span class="modal-option-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8.2" r="3.4"/><path d="M5 20c0-3.6 3.1-6.2 7-6.2s7 2.6 7 6.2"/></svg>
+        </span>
+        <span class="modal-option-text">
+          <strong data-i18n="invite.userTitle">Usuario</strong>
+          <span data-i18n="invite.userBody">Lo usás vos, en cualquier servidor o mensaje directo.</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="lang/es.js"></script>
+<script src="lang/en.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

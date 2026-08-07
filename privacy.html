@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function () {
+  var mode = localStorage.getItem("theme-mode") || "auto";
+  var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var theme = mode === "auto" ? (dark ? "dark" : "light") : mode;
+  document.documentElement.setAttribute("data-theme", theme);
+  document.documentElement.setAttribute("data-theme-mode", mode);
+})();
+</script>
+<title data-i18n="meta.titlePrivacy">Política de Privacidad — Xnn AI</title>
+<meta name="description" content="Política de privacidad de Xnn AI, bot de Discord con inteligencia artificial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html#top">
+      <span class="logo-mark" aria-hidden="true">X</span>
+      Xnn AI
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html#top" data-i18n="nav.home">Inicio</a>
+      <a href="index.html#funciones" data-i18n="nav.features">Funciones</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Privacidad</a>
+      <a href="terms.html" data-i18n="nav.terms">Términos</a>
+    </nav>
+
+    <div class="header-controls">
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button type="button" class="lang-trigger" id="lang-trigger" data-i18n-aria-label="lang.selectLabel" aria-label="Idioma" aria-haspopup="listbox" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.3 2.3 3.5 5.3 3.5 8.5s-1.2 6.2-3.5 8.5c-2.3-2.3-3.5-5.3-3.5-8.5S9.7 5.8 12 3.5Z"/></svg>
+          <span class="lang-code" id="lang-current-code">ES</span>
+          <span class="lang-chevron" aria-hidden="true"></span>
+        </button>
+        <div class="lang-panel" id="lang-panel" role="listbox" aria-label="Idioma"></div>
+      </div>
+      <button class="icon-btn" id="theme-toggle" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="1.4"/><path d="M8 20h8M12 16.5V20"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="legal">
+    <div class="container">
+      <a class="back-link" href="index.html#top">
+        <span aria-hidden="true">←</span>
+        <span data-i18n="common.backHome">Volver al inicio</span>
+      </a>
+
+      <h1 data-i18n="privacy.title">Política de Privacidad</h1>
+      <p class="legal-updated" data-i18n="privacy.updated">Última actualización: [completa esta fecha]</p>
+      <p class="legal-intro" data-i18n="privacy.intro">Esta política explica qué datos recopila Xnn AI, tanto en Discord como en este sitio web, y cómo los usamos.</p>
+
+      <article class="legal-section">
+        <h2 data-i18n="privacy.s1.title">Qué datos recopilamos</h2>
+        <p data-i18n="privacy.s1.body">…</p>
+      </article>
+      <article class="legal-section">
+        <h2 data-i18n="privacy.s2.title">Cómo usamos los datos</h2>
+        <p data-i18n="privacy.s2.body">…</p>
+      </article>
+      <article class="legal-section">
+        <h2 data-i18n="privacy.s3.title">Con quién compartimos datos</h2>
+        <p data-i18n="privacy.s3.body">…</p>
+      </article>
+      <article class="legal-section">
+        <h2 data-i18n="privacy.s4.title">Cuánto tiempo conservamos los datos</h2>
+        <p data-i18n="privacy.s4.body">…</p>
+      </article>
+      <article class="legal-section">
+        <h2 data-i18n="privacy.s5.title">Tus derechos</h2>
+        <p data-i18n="privacy.s5.body">…</p>
+      </article>
+      <article class="legal-section">
+        <h2 data-i18n="privacy.s6.title">Seguridad</h2>
+        <p data-i18n="privacy.s6.body">…</p>
+      </article>
+      <article class="legal-section">
+        <h2 data-i18n="privacy.s7.title">Menores de edad</h2>
+        <p data-i18n="privacy.s7.body">…</p>
+      </article>
+      <article class="legal-section">
+        <h2 data-i18n="privacy.s8.title">Cambios en esta política</h2>
+        <p data-i18n="privacy.s8.body">…</p>
+      </article>
+      <article class="legal-section">
+        <h2 data-i18n="privacy.s9.title">Contacto</h2>
+        <p data-i18n="privacy.s9.body">…</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html#top">
+          <span class="logo-mark" aria-hidden="true">X</span>
+          Xnn AI
+        </a>
+        <p data-i18n="footer.tagline">Un bot de Discord con IA para investigar, aprender historia y programar mejor.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4 data-i18n="footer.linksHeading">Explorar</h4>
+          <a href="index.html#top" data-i18n="nav.home">Inicio</a>
+          <a href="index.html#funciones" data-i18n="nav.features">Funciones</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legalHeading">Legal</h4>
+          <a href="privacy.html" data-i18n="nav.privacy">Privacidad</a>
+          <a href="terms.html" data-i18n="nav.terms">Términos</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year"></span> Xnn AI. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="lang/es.js"></script>
+<script src="lang/en.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
