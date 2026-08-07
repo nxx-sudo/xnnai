@@ -1,16 +1,10 @@
-/* =========================================================
-   Language: English (en)
-   To add a new language, duplicate this file, translate the
-   values (never the keys), and link it in the <head> of
-   every HTML page. See README.md for the full walkthrough.
-   ========================================================= */
 window.translations = window.translations || {};
 window.translations.en = {
   meta: {
     label: "English",
-    titleHome: "Xnn AI — Discord bot for research, science, history and coding",
-    titlePrivacy: "Privacy Policy — Xnn AI",
-    titleTerms: "Terms and Conditions — Xnn AI"
+    titleHome: "Xnn AI - Discord bot for research, science, history and coding",
+    titlePrivacy: "Privacy Policy - Xnn AI",
+    titleTerms: "Terms and Conditions - Xnn AI"
   },
 
   nav: {
@@ -44,8 +38,8 @@ window.translations.en = {
     demoQuestion: "Why was the Library of Alexandria so important to science?",
     demoAnswer: "It gathered the largest archive of the ancient world¹, laying the groundwork for bibliographic cataloguing and cross-referencing sources². Its legacy still shapes how we organize knowledge today.",
     demoSourcesLabel: "Sources",
-    demoSource1: "¹ Encyclopaedia Britannica — Library of Alexandria",
-    demoSource2: "² UNESCO Memory of the World — Ancient Libraries"
+    demoSource1: "¹ Encyclopaedia Britannica - Library of Alexandria",
+    demoSource2: "² UNESCO Memory of the World - Ancient Libraries"
   },
 
   features: {
@@ -83,7 +77,7 @@ window.translations.en = {
     },
     step3: {
       title: "Get an answer with sources",
-      body: "Receive a clear explanation and, where relevant, the references behind it — ready to cite or research further."
+      body: "Receive a clear explanation and, where relevant, the references behind it - ready to cite or research further."
     }
   },
 
@@ -116,7 +110,7 @@ window.translations.en = {
 
   privacy: {
     title: "Privacy Policy",
-    updated: "Last updated: [fill in this date]",
+    updated: "Last updated: 07/08/26",
     intro: "This policy explains what data Xnn AI collects, both on Discord and on this website, and how we use it. Replace the bracketed text with your project's real details before publishing this page.",
     s1: {
       title: "What data we collect",
@@ -124,7 +118,7 @@ window.translations.en = {
     },
     s2: {
       title: "How we use the data",
-      body: "We use the data to process your commands, generate responses — including, where applicable, calls to third-party AI providers — and to detect abuse or misuse of the service. We do not use your messages for advertising purposes."
+      body: "We use the data to process your commands, generate responses - including, where applicable, calls to third-party AI providers - and to detect abuse or misuse of the service. We do not use your messages for advertising purposes."
     },
     s3: {
       title: "Who we share data with",
@@ -136,7 +130,7 @@ window.translations.en = {
     },
     s5: {
       title: "Your rights",
-      body: "You can request access to, correction of, or deletion of your data by writing to [contact email]. If you live in the European Economic Area or another region with equivalent data protection, these rights apply under your local regulations."
+      body: "You can request access to, correction of, or deletion of your data by writing to xnnaiof@protonmail.com. If you live in the European Economic Area or another region with equivalent data protection, these rights apply under your local regulations."
     },
     s6: {
       title: "Security",
@@ -152,13 +146,13 @@ window.translations.en = {
     },
     s9: {
       title: "Contact",
-      body: "For any privacy questions, write to us at [contact email] or through [your Discord support server]."
+      body: "For any privacy questions, write to us at xnnaiof@gmail.com or through [Server unavailable]."
     }
   },
 
   terms: {
     title: "Terms and Conditions",
-    updated: "Last updated: [fill in this date]",
+    updated: "Last updated: 07/08/26",
     intro: "By adding or using Xnn AI you accept these terms. Replace the bracketed text with your project's real details before publishing this page.",
     s1: {
       title: "Acceptance of terms",
@@ -198,7 +192,7 @@ window.translations.en = {
     },
     s10: {
       title: "Contact",
-      body: "For any questions about these terms, write to us at [contact email] or through [your Discord support server]."
+      body: "For any questions about these terms, write to us at xnnaiof@protonmail.com or through [Server unavailable]."
     }
   }
 };
