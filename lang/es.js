@@ -1,9 +1,3 @@
-/* =========================================================
-   Idioma: Español (es)
-   Para crear un idioma nuevo, duplica este archivo, traduce
-   los valores (nunca las claves) y enlázalo en el <head> de
-   cada página HTML. Ver README.md para el paso a paso.
-   ========================================================= */
 window.translations = window.translations || {};
 window.translations.es = {
   meta: {
@@ -124,7 +118,7 @@ window.translations.es = {
     },
     s2: {
       title: "Cómo usamos los datos",
-      body: "Usamos los datos para procesar tus comandos, generar respuestas —incluyendo, cuando corresponde, llamadas a proveedores de inteligencia artificial de terceros— y para detectar abuso o mal uso del servicio. No usamos tus mensajes con fines publicitarios."
+      body: "Usamos los datos para procesar tus comandos, generar respuestas incluyendo, cuando corresponde, llamadas a proveedores de inteligencia artificial de terceros— y para detectar abuso o mal uso del servicio. No usamos tus mensajes con fines publicitarios."
     },
     s3: {
       title: "Con quién compartimos datos",
