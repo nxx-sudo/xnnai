@@ -2,9 +2,9 @@ window.translations = window.translations || {};
 window.translations.es = {
   meta: {
     label: "Español",
-    titleHome: "Xnn AI — Bot de Discord para investigación, ciencia, historia y programación",
-    titlePrivacy: "Política de Privacidad — Xnn AI",
-    titleTerms: "Términos y Condiciones — Xnn AI"
+    titleHome: "Xnn AI - Bot de Discord para investigación, ciencia, historia y programación",
+    titlePrivacy: "Política de Privacidad - Xnn AI",
+    titleTerms: "Términos y Condiciones - Xnn AI"
   },
 
   nav: {
