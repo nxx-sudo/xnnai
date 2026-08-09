@@ -1,20 +1,6 @@
-/* =========================================================
-   Xnn AI — main.js
-   Gestiona: tema (claro / oscuro / automático) e idioma.
-   Para añadir un idioma nuevo, no hace falta tocar este
-   archivo: basta con crear lang/xx.js y enlazarlo en el
-   <head> de cada página. Ver README.md.
-   ========================================================= */
-
 (function () {
   "use strict";
 
-  /* -----------------------------------------------------
-     TEMA
-     Estados: "auto" (sigue al sistema), "light", "dark".
-     El estado inicial ya lo aplica un script inline en el
-     <head> de cada página para evitar parpadeos (FOUC).
-     ----------------------------------------------------- */
   var THEME_MODES = ["auto", "light", "dark"];
   var mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
