@@ -126,7 +126,7 @@ window.translations.en = {
     },
     s4: {
       title: "How long we keep data",
-      body: "We keep command logs for the minimum time needed to run and improve the service [specify a period, e.g. 30 days], unless we must keep them longer due to a legal obligation or to investigate abuse."
+      body: "We keep command logs for the minimum time needed to run and improve the service, unless we must keep them longer due to a legal obligation or to investigate abuse."
     },
     s5: {
       title: "Your rights",
