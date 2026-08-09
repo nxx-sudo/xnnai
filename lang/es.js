@@ -126,7 +126,7 @@ window.translations.es = {
     },
     s4: {
       title: "Cuánto tiempo conservamos los datos",
-      body: "Conservamos los registros de comandos el tiempo mínimo necesario para operar y mejorar el servicio [especifica el plazo, por ejemplo 30 días], salvo que debamos conservarlos más tiempo por obligación legal o para investigar un abuso."
+      body: "Conservamos los registros de comandos el tiempo mínimo necesario para operar y mejorar el servicio, salvo que debamos conservarlos más tiempo por obligación legal o para investigar un abuso."
     },
     s5: {
       title: "Tus derechos",
@@ -146,7 +146,7 @@ window.translations.es = {
     },
     s9: {
       title: "Contacto",
-      body: "Para cualquier consulta sobre privacidad, escríbenos a xnnaiof@protonmail.com o a través de [Servidor no nisponible]."
+      body: "Para cualquier consulta sobre privacidad, escríbenos a xnnaiof@protonmail.com o a través de [Servidor no disponible]."
     }
   },
 
